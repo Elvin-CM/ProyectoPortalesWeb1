@@ -13,3 +13,144 @@ header div{
     align-items: center;
     flex-direction: column;
 }
+
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.buscar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.buscar-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.buscar-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.buscar-container button:hover {
+    background-color: #45a049;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.product h3 {
+    margin: 10px 0 5px;
+}
+.product p {
+    color: #555;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    gap: 30px;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 280px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.info-container {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-container h3 {
+    margin-top: 0;
+}
+
+.info-container a {
+    color: #444;
+    text-decoration: none;
+}
+
+.info-container a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
