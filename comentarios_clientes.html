@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comentarios de clientes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <script src="JS/validacionFormComentarios.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="Imagenes/logo.jpg" alt="Logo de Gissell's Shop"/>
+            <h1>Gissell's Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria_fotos.html">Galeria</a></li>
+                <li><a href="sobreNosotros.html">Nosotros</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="NuestrosProgramas.html">Nuestros estilos</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+                <li><a href="tendencia_moda.html">Tendencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="comentarios">
+            <h2>Comentarios de nuestros clientes</h2>
+            <p>Nos encanta saber qué piensan nuestros clientes. Aquí puedes leer sus experiencias y opiniones sobre
+                nuestro servicio.</p>
+            <p>Si deseas dejar un comentario, por favor completa el formulario al final de la página.</p>
+            <div class="comentarios-lista">
+                <div class="comentario">
+                    <h3>Juan Pérez</h3>
+                    <p>"Me encantó el servicio y la calidad de los productos. Sin duda volveré a comprar en Gissell's
+                        Shop. Me lleve una buena impresion del servicio"</p>
+                    <div class="calificacion">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="comentario">
+                    <h3>Laura Gómez</h3>
+                    <p>"Un sitio donde poder comprar prendas lindas. El envío fue rápido y el paquete llegó en perfectas
+                        condiciones."</p>
+                    <div class="calificacion">⭐⭐⭐⭐</div>
+                </div>
+                <div class="comentario">
+                    <h3>Roselia Moran</h3>
+                    <p>"Muy buena capacidad de satisfacer a los clientes, grata experiencia y mi paquete llego a tiempo.
+                        El
+                        unico inconveniente fue que el paquete donde venia mi ropa llego golpeada, nose si se deba a la
+                        entrega o paso algun inconveniente"</p>
+                    <div class="calificacion">⭐⭐⭐</div>
+                </div>
+            </div>
+            <h3>Deja tu comentario</h3>
+            <form id="comentario-form" action="#" method="get" class="comentario-form" novalidate>
+                <div id="divNombre">
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div id="divComentario">
+                    <label for="comentario">Tu comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                </div>
+
+                <label for="calificacion">Calificación:</label>
+                <select id="calificacion" name="calificacion" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2025 Gissell's Shop</p>
+    </footer>
+</body>
+
+</html>
