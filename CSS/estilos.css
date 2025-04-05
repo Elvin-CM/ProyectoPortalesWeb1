@@ -5,7 +5,6 @@
     border: 0;
 }
 body{
-<<<<<<< HEAD
     background-color: #c8bf95;
     margin: 0;
     padding: 0;
@@ -14,11 +13,6 @@ body{
 h1{
     align-items: center;
     display: flex;
-=======
-    margin: 0px;
-    padding: 0px;
-    background-color: #f3effd;
->>>>>>> 78a8ba535d18f611b891fc87239a7ad430cc5a13
 }
 p{
     line-height: 1.5;
@@ -157,30 +151,44 @@ header nav ul li a:hover::after {
 .buscar-container button:hover {
     background-color: #45a049;
 }
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en lugar de dos */
+    gap: 15px;
     padding: 20px;
+    margin-bottom: 5.5rem;
 }
+
 .product {
     background-color: white;
-    padding: 15px;
+    padding: 10px; 
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
+    text-decoration: none;
+    color:  #414875;
 }
-.product img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+
+.product a {
+    display: block;
+    text-decoration: none;
+    color: inherit; 
+    border: none;
 }
+
+.icon {
+    font-size: 100px;
+}
+
 .product h3 {
     margin: 10px 0 5px;
 }
+
 .product p {
     color: #555;
 }
+
 
 .contact-wrapper {
     display: flex;
