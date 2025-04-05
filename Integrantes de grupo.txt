@@ -4,20 +4,20 @@ Usuario: Elvin-CM
 
 Nombre: Carlos Roberto Flores Erazo
 No. de cuenta: 1614200400112
-Usuario:
+Usuario: ANCAR22
 
 Nombre: Ceylin Yamileth Santos Ortez
 No. de cuenta: 0208200301020
-Usuario:
+Usuario: Ceylinsantos
 
 Nombre: Daniel Isac Carranza Guzman
 No. de cuenta: 1003200300484 
-Usuario:
-
+Usuario: daniel5041
+ 
 Nombre: Juan Daniel Turcios Zelaya
 No. de cuenta: 0512199802184 
 Usuario: JuanTurcios226
 
 Nombre: Mario Daniel Orellana Toro
 No. de cuenta: 0401200500632 
-Usuario:
+Usuario: MaggotHeath
