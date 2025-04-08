@@ -1,5 +1,5 @@
-function moveSlide(season, direction) {
-    const carousel = document.getElementById(season);
+function moveSlide(button, direction) {
+    const carousel = button.closest('.carousel');
     const imagesContainer = carousel.querySelector('.carousel-images');
     const images = imagesContainer.querySelectorAll('img');
     const totalImages = images.length;
