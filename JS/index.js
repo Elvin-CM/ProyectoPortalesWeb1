@@ -18,12 +18,3 @@ document.querySelectorAll('.product-card').forEach(card => {
 });
 
 
-document.querySelectorAll('.cta-button').forEach(button => {
-    button.addEventListener('click', function() {
-        this.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            this.style.transform = 'scale(1)';
-        }, 200);
-        alert('Producto añadido al carrito');
-    });
-});
