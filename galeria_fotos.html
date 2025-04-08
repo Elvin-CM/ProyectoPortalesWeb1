@@ -1,13 +1,209 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeria de fotos</title>
-   </head>   
-   <body>
-      <h1>Galeria</h1>    
-    <footer>
-    </footer>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de fotos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Imagenes/logo.jpg" alt="Logo de Gissell's Shop"/>
+            <h1>Gissell's Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria_fotos.html">Galeria</a></li>
+                <li><a href="sobreNosotros.html">Nosotros</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="NuestrosProgramas.html">Nuestros estilos</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+                <li><a href="tendencia_moda.html">Tendencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titular">
+            <h2>Galería De Productos</h2>
+            <h3>Descubre y encuentra el producto que mejor se adapta a tu estilo en Gissell's Shop</h3>
+            <p>
+                En Gissell's Shop, te ofrecemos una experiencia única de moda para cada estación del año. Descubre nuestra exclusiva
+                colección de ropa y accesorios diseñados para resaltar tu estilo durante el verano, el invierno, la primavera y el otoño.
+                Cada temporada trae consigo una nueva inspiración, y en nuestra galería podrás explorar piezas cuidadosamente seleccionadas
+                para que luzcas increíble todo el año.
+            </p><br>
+            <h3>Haz click y desliza para descubrir nuestros estilos ⬇️</h3>
+        </section>
+        <section class="carousel-container">
+            <div class="carousel-item">
+                <div class="carousel" id="verano">
+                    <h2>Verano</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/vm1.jpg" alt="Verano 1">
+                        <img src="Imagenes/vm2.jpg" alt="Verano 2">
+                        <img src="Imagenes/vm3.jpg" alt="Verano 3">
+                    </div>
+                    <button class="prev" onclick="moveSlide('verano', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('verano', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="invierno">
+                    <h2>Invierno</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/Im1.jpg" alt="Invierno 1">
+                        <img src="Imagenes/Im2.jpg" alt="Invierno 2">
+                        <img src="Imagenes/Im3.jpg" alt="Invierno 3">
+                    </div>
+                    <button class="prev" onclick="moveSlide('invierno', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('invierno', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="primavera">
+                    <h2>Primavera</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/pm1.jpg" alt="Primavera 1">
+                        <img src="Imagenes/pm2.jpg" alt="Primavera 2">
+                        <img src="Imagenes/pm3.jpg" alt="Primavera 3">
+                    </div>
+                    <button class="prev" onclick="moveSlide('primavera', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('primavera', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="otono">
+                    <h2>Otoño</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/om1.jpg" alt="Otoño 1">
+                        <img src="Imagenes/om2.jpg" alt="Otoño 2">
+                        <img src="Imagenes/om3.jpg" alt="Otoño 3">
+                    </div>
+                    <button class="prev" onclick="moveSlide('otono', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('otono', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section><br>
+        
+        <section class="titular">
+            <h3>¿Necesitas renovar tu guardarropa y lucir espectacular durante todo el año?</h3>
+            <p>
+                Nuestra galería presenta una variada selección de pantalones, camisas, zapatos y mucho más, 
+                pensados para brindarte estilo y comodidad.
+                Puedes preguntar a nuestros contactos por algo un poco mas a tu estilo personal.
+            </p>
+            <p>
+                Aprovecha este espectacular descuento del 10% ⬇️
+            </p>
+        </section>
+        <section class="carousel-container">
+            <div class="carousel-item">
+                <div class="carousel" id="pantalones">
+                    <h2>Pantalones</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/p1.jpg" alt="Pantalones 1">
+                        <img src="Imagenes/p2.jpg" alt="Pantalones 2">
+                        <img src="Imagenes/p3.jpg" alt="Pantalones 3">
+                        <img src="Imagenes/p4.jpg" alt="Pantalones 4">
+                        <img src="Imagenes/p5.jpg" alt="Pantalones 5">
+                        <img src="Imagenes/p6.jpg" alt="Pantalones 6">
+                    </div>
+                    <button class="prev" onclick="moveSlide('pantalones', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('pantalones', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="camisas">
+                    <h2>Camisas</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/c1.jpg" alt="Camisas 1">
+                        <img src="Imagenes/c2.jpg" alt="Camisas 2">
+                        <img src="Imagenes/c3.jpg" alt="Camisas 3">
+                        <img src="Imagenes/c4.jpg" alt="Camisas 4">
+                        <img src="Imagenes/c5.jpg" alt="Camisas 5">
+                        <img src="Imagenes/c6.jpg" alt="Camisas 6">
+                    </div>
+                    <button class="prev" onclick="moveSlide('camisas', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('camisas', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="gorras">
+                    <h2>Gorras</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/g1.jpg" alt="Gorras 1">
+                        <img src="Imagenes/g2.jpg" alt="Gorras 2">
+                        <img src="Imagenes/g3.jpg" alt="Gorras 3">
+                        <img src="Imagenes/g4.jpg" alt="Gorras 4">
+                        <img src="Imagenes/g5.jpg" alt="Gorras 5">
+                        <img src="Imagenes/g6.jpg" alt="Gorras 6">
+                    </div>
+                    <button class="prev" onclick="moveSlide('gorras', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('gorras', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="abrigos">
+                    <h2>Abrigos</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/a1.jpg" alt="Abrigos 1">
+                        <img src="Imagenes/a2.jpg" alt="Abrigos 2">
+                        <img src="Imagenes/a3.jpg" alt="Abrigos 3">
+                        <img src="Imagenes/a4.jpg" alt="Abrigos 4">
+                        <img src="Imagenes/a5.jpg" alt="Abrigos 5">
+                        <img src="Imagenes/a6.jpg" alt="Abrigos 6">
+                    </div>
+                    <button class="prev" onclick="moveSlide('abrigos', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('abrigos', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="zapatos">
+                    <h2>Zapatos</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/z1.jpg" alt="Zapatos 1">
+                        <img src="Imagenes/z2.jpg" alt="Zapatos 2">
+                        <img src="Imagenes/z3.jpg" alt="Zapatos 3">
+                        <img src="Imagenes/z4.jpg" alt="Zapatos 4">
+                        <img src="Imagenes/z5.jpg" alt="Zapatos 5">
+                        <img src="Imagenes/z6.jpg" alt="Zapatos 6">
+                    </div>
+                    <button class="prev" onclick="moveSlide('zapatos', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('zapatos', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel" id="bolsos">
+                    <h2>Bolsos</h2>
+                    <div class="carousel-images">
+                        <img src="Imagenes/b1.jpg" alt="Bolsos 1">
+                        <img src="Imagenes/b2.jpg" alt="Bolsos 2">
+                        <img src="Imagenes/b3.jpg" alt="Bolsos 3">
+                        <img src="Imagenes/b4.jpg" alt="Bolsos 4">
+                        <img src="Imagenes/b5.jpg" alt="Bolsos 5">
+                        <img src="Imagenes/b6.jpg" alt="Bolsos 6">
+                    </div>
+                    <button class="prev" onclick="moveSlide('bolsos', -1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide('bolsos', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section><br>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+<footer>
+    <p>Todos los derechos reservados &copy; 2025 Gissell's Shop</p>
+</footer>
 </html>
