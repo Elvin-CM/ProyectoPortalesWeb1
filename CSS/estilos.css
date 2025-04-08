@@ -533,7 +533,7 @@ footer p:hover {
 }
 
 
-button {
+.carousel-button {
     position: absolute;
     top: 50%;
     background-color: #414875;
@@ -545,15 +545,15 @@ button {
     font-size: 18px;
 }
 
-button.prev {
+.carousel-button.prev {
     left: 10px;
 }
 
-button.next {
+.carousel-button.next {
     right: 10px;
 }
 
-button:hover {
+.carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -606,7 +606,7 @@ button:hover {
         font-weight: normal; 
     }
 
-    button {
+    .carousel-button {
         padding: 5px; 
         font-size: 6px; 
     }
