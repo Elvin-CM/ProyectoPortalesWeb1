@@ -1,35 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const formulario = document.getElementById('form-contacto');
+function moveSlide(button, direction) {
+    const carousel = button.closest('.carousel');
+    const imagesContainer = carousel.querySelector('.carousel-images');
+    const images = imagesContainer.querySelectorAll('img');
+    const totalImages = images.length;
 
-    formulario.addEventListener('submit', function (e) {
-        e.preventDefault(); // Evita el envío real del formulario
+    let currentIndex = parseInt(imagesContainer.dataset.currentIndex) || 0;
 
-        const nombre = formulario.nombre.value.trim();
-        const correo = formulario.correo.value.trim();
-        const mensaje = formulario.mensaje.value.trim();
+    let newIndex = currentIndex + direction;
 
-        const campoVacioRegex = /^\s*$/;
-        const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (newIndex < 0) newIndex = totalImages - 1;
+    if (newIndex >= totalImages) newIndex = 0;
 
-        if (campoVacioRegex.test(nombre)) {
-            alert('Por favor, ingresa tu nombre.');
-            return;
-        }
+    imagesContainer.style.transition = 'transform 0.5s ease-in-out';
+    imagesContainer.style.transform = `translateX(-${newIndex * 100}%)`;
 
-        if (!correoRegex.test(correo)) {
-            alert('Por favor, ingresa un correo electrónico válido.');
-            return;
-        }
-
-        if (campoVacioRegex.test(mensaje)) {
-            alert('Por favor, escribe un mensaje.');
-            return;
-        }
-
-        // ✅ Si todo está bien
-        alert("Formulario enviado con éxito ✅");
-
-        // Limpiar campos
-        formulario.reset();
-    });
-});
+    imagesContainer.dataset.currentIndex = newIndex;
+}
