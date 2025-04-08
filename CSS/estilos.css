@@ -203,6 +203,19 @@ header nav ul li a:hover::after {
     color: #555;
 }
 
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #dcd5f7;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
 .form-container {
     flex: 1;
     min-width: 280px;
