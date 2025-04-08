@@ -646,4 +646,46 @@ footer p:hover {
         width: 100%;
         height: auto;
     }
+    @media (max-width: 1024px) {
+        header {
+            padding: 1rem 1.5rem;
+        }
+    
+        .hero-content h1 {
+            font-size: 3em;
+        }
+    
+        .hero-content p {
+            font-size: 1.2em;
+        }
+    
+        .cta-button {
+            font-size: 1.1em;
+            padding: 12px 35px;
+        }
+    
+        .featured-products h2 {
+            font-size: 2.2em;
+        }
+    
+        .products-grid {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+    
+        .product-card {
+            transition: transform 0.4s ease;
+        }
+    
+        .product-info {
+            padding: 15px;
+        }
+    
+        .product-title {
+            font-size: 1.1em;
+        }
+    
+        .product-price {
+            font-size: 1.2em;
+        }
+    }
 }
