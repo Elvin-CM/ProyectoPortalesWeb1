@@ -1,60 +1,68 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
     border: 0;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-main{
+
+main {
     max-width: 1024px;
     margin: 0.5rem auto;
     padding: 0.5rem;
-    overflow: hidden
+    overflow: hidden;
 }
-main h1{
+
+main h1 {
     text-align: center;
     display: flex;
 }
-p{
+
+p {
     line-height: 1.5;
 }
+
 header {
-    background-color: #414875; 
+    background-color: #414875;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 header div {
     display: flex;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
 }
+
 header div img {
     height: 70px;
     width: auto;
     border-radius: 8px;
     object-fit: contain;
 }
+
 header div h1 {
     color: white;
-    font-size: 2rem; 
+    font-size: 1.3rem;
     font-weight: bold;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem; 
+    gap: 2rem;
 }
 
 header nav ul li {
-    position: relative; 
+    position: relative;
 }
 
 header nav ul li a {
@@ -62,8 +70,8 @@ header nav ul li a {
     color: white;
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.75rem 1.25rem;
-    border-radius: 25px; 
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -75,18 +83,19 @@ header nav ul li a::after {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: #ffc300; 
+    background-color: #ffc300;
     transition: width 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #6c757d; 
+    background-color: #6c757d;
     color: white;
 }
 
 header nav ul li a:hover::after {
     width: 100%;
 }
+
 .tendencias {
     max-width: 1000px;
     margin: 2rem auto;
@@ -136,12 +145,14 @@ header nav ul li a:hover::after {
     line-height: 1.5;
     padding: 0.5rem;
 }
+
 .buscar-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
 }
+
 .buscar-container input[type="text"] {
     padding: 10px;
     font-size: 16px;
@@ -168,7 +179,7 @@ header nav ul li a:hover::after {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en lugar de dos */
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 20px;
     margin-bottom: 5.5rem;
@@ -176,18 +187,18 @@ header nav ul li a:hover::after {
 
 .product {
     background-color: #dcd5f7;
-    padding: 10px; 
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
-    color:  #414875;
+    color: #414875;
 }
 
 .product a {
     display: block;
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
     border: none;
 }
 
@@ -202,7 +213,6 @@ header nav ul li a:hover::after {
 .product p {
     color: #555;
 }
-
 
 .contact-wrapper {
     display: flex;
@@ -272,6 +282,7 @@ header nav ul li a:hover::after {
 .info-container a:hover {
     text-decoration: underline;
 }
+
 .comentarios {
     max-width: 900px;
     margin: 2rem auto;
@@ -287,6 +298,7 @@ header nav ul li a:hover::after {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .comentarios p {
     font-size: 1rem;
     line-height: 1.6;
@@ -294,12 +306,14 @@ header nav ul li a:hover::after {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .comentarios-lista {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
+
 .comentario {
     background-color: #e9ecfa;
     padding: 1rem 1.5rem;
@@ -311,6 +325,7 @@ header nav ul li a:hover::after {
     margin-bottom: 0.5rem;
     color: #333;
 }
+
 .comentario p {
     margin: 0.5rem 0;
     font-style: italic;
@@ -322,6 +337,7 @@ header nav ul li a:hover::after {
     color: #f4c430;
     margin-top: 0.5rem;
 }
+
 .comentario-form {
     margin-top: 2rem;
     display: flex;
@@ -333,6 +349,7 @@ header nav ul li a:hover::after {
     font-weight: bold;
     color: #333;
 }
+
 .comentario-form input,
 .comentario-form textarea,
 .comentario-form select {
@@ -343,6 +360,7 @@ header nav ul li a:hover::after {
     font-size: 1rem;
     font-family: inherit;
 }
+
 .comentario-form button {
     background-color: #414875;
     color: white;
@@ -353,9 +371,11 @@ header nav ul li a:hover::after {
     transition: background-color 0.3s ease;
     font-weight: bold;
 }
+
 .comentario-form button:hover {
     background-color: #2f3560;
 }
+
 .error {
     border: 2px solid red;
 }
@@ -365,25 +385,26 @@ header nav ul li a:hover::after {
     font-size: 0.9rem;
     margin-top: 4px;
 }
+
 footer {
-    background-color: #414875; 
+    background-color: #414875;
     color: white;
     text-align: center;
-    padding: 0.75rem; 
-    font-size: 1rem; 
-    font-style: normal; 
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-style: normal;
     letter-spacing: 0.5px;
 }
+
 footer p {
-    margin: 0; 
-    font-weight: 300; 
+    margin: 0;
+    font-weight: 300;
 }
+
 footer p:hover {
-    color: #ffc300; 
-    transition: color 0.3s ease; 
+    color: #ffc300;
+    transition: color 0.3s ease;
 }
-
-
 
 .cardContainer {
     display: flex;
@@ -416,14 +437,14 @@ footer p:hover {
 .card .cardFooter {
     background-color: #414875;
     padding: 20px;
-    border:2px solid black ;
+    border: 2px solid black;
 }
 
-.card .cardFooter a{
+.card .cardFooter a {
     text-decoration: none;
 }
 
-.card .cardFooter a:hover{
+.card .cardFooter a:hover {
     color: #dcd5f7;
 }
 
@@ -446,8 +467,8 @@ footer p:hover {
     align-items: center;
 }
 
-.info h2{
-    text-align:center;
+.info h2 {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #414875;
@@ -479,30 +500,30 @@ footer p:hover {
     margin-bottom: 8px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 0 auto; 
-    max-width: 1024px; 
-    padding: 0 10px; 
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 10px;
 }
 
 .carousel-item {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex: 0 0 calc(50% - 20px); 
-    box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(50% - 20px);
+    box-sizing: border-box;
 }
 
 .carousel {
-    width: 300px; 
+    width: 300px;
     height: 240px;
     position: relative;
     background-color: #fff;
@@ -510,19 +531,19 @@ footer p:hover {
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .carousel h2 {
-    background-color:#dcd5f7;
+    background-color: #dcd5f7;
     color: black;
     padding: 10px;
-    margin:0%;
+    margin: 0%;
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
     width: 100%;
 }
 
@@ -531,7 +552,6 @@ footer p:hover {
     height: 100%;
     object-fit: cover;
 }
-
 
 .carousel-button {
     position: absolute;
@@ -588,26 +608,84 @@ footer p:hover {
         width: 100%;
         text-align: left;
     }
+
     .carousel-item {
         flex: 0 0 calc(50% - 10px);
-        max-width: calc(50% - 10px); 
-        padding: 5px; 
+        max-width: calc(50% - 10px);
+        padding: 5px;
     }
 
     .carousel {
-        width: 90%; 
+        width: 90%;
         max-width: 280px;
-        height: auto; 
+        height: auto;
     }
 
     .carousel h2 {
         padding: 8px;
         font-size: 1rem;
-        font-weight: normal; 
+        font-weight: normal;
     }
 
     .carousel-button {
-        padding: 5px; 
-        font-size: 6px; 
+        padding: 5px;
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 320px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .tendencia-horizontal img {
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width: 1024px) {
+        header {
+            padding: 1rem 1.5rem;
+        }
+    
+        .hero-content h1 {
+            font-size: 3em;
+        }
+    
+        .hero-content p {
+            font-size: 1.2em;
+        }
+    
+        .cta-button {
+            font-size: 1.1em;
+            padding: 12px 35px;
+        }
+    
+        .featured-products h2 {
+            font-size: 2.2em;
+        }
+    
+        .products-grid {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+    
+        .product-card {
+            transition: transform 0.4s ease;
+        }
+    
+        .product-info {
+            padding: 15px;
+        }
+    
+        .product-title {
+            font-size: 1.1em;
+        }
+    
+        .product-price {
+            font-size: 1.2em;
+        }
     }
 }
